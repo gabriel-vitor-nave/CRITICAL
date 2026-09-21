@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.InputSystem; // Obrigatório para o CallbackContext
+using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerMovement : MonoBehaviour
