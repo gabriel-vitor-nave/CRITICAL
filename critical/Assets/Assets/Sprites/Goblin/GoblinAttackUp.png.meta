@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5dabebc47b1c0d348badbea1beba24f3
+guid: b67769eac36bf6949bd1477f696dd41e
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,85 +123,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GoblinWalkUp_0
+      name: GoblinAttackUp_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 50
+        height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cc64044b714ae24f888028118c2950f
-      internalID: -1191879577
+      spriteID: 8ea8db97602b4df479d2b270f9dccd5c
+      internalID: 452853362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoblinWalkUp_1
+      name: GoblinAttackUp_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 50
         y: 0
-        width: 32
-        height: 32
+        width: 50
+        height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cacebd7a87fdc334ba44953014d32816
-      internalID: -1198719470
+      spriteID: 0650b8f88d364d845bb6cbecd5d5665c
+      internalID: 994492756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoblinWalkUp_2
+      name: GoblinAttackUp_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 100
         y: 0
-        width: 32
-        height: 32
+        width: 50
+        height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b7f2b12945b3104e844a5b508ed82be
-      internalID: -1757397695
+      spriteID: a1cdf648e1c22ac4b8678c18895b536a
+      internalID: 2139910259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoblinWalkUp_3
+      name: GoblinAttackUp_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 150
         y: 0
-        width: 32
-        height: 32
+        width: 50
+        height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90a43ce2793138e4a97114470daf5371
-      internalID: 1669505584
+      spriteID: dbac2827995539c41bb7b2b7c0a1d6a5
+      internalID: 99737841
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GoblinWalkUp_0: -1191879577
-      GoblinWalkUp_1: -1198719470
-      GoblinWalkUp_2: -1757397695
-      GoblinWalkUp_3: 1669505584
+      GoblinAttackUp_0: 452853362
+      GoblinAttackUp_1: 994492756
+      GoblinAttackUp_2: 2139910259
+      GoblinAttackUp_3: 99737841
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

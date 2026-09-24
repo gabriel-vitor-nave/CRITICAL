@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5dabebc47b1c0d348badbea1beba24f3
+guid: 35a32512b509bb645b75451086171d04
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,85 +123,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GoblinWalkUp_0
+      name: GoblinAttackDown_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 32
-        height: 32
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6cc64044b714ae24f888028118c2950f
-      internalID: -1191879577
+      spriteID: e7a1b5c34c32aec4db718a88f05ba0ed
+      internalID: -235531692
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoblinWalkUp_1
+      name: GoblinAttackDown_1
       rect:
         serializedVersion: 2
         x: 32
         y: 0
         width: 32
-        height: 32
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cacebd7a87fdc334ba44953014d32816
-      internalID: -1198719470
+      spriteID: 0d5f0d2717c5d0347842d92016ad1693
+      internalID: 10230019
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoblinWalkUp_2
+      name: GoblinAttackDown_2
       rect:
         serializedVersion: 2
         x: 64
         y: 0
         width: 32
-        height: 32
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b7f2b12945b3104e844a5b508ed82be
-      internalID: -1757397695
+      spriteID: 8bbb7d3f7a1d3854f9406d82918d78f1
+      internalID: -2963995
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GoblinWalkUp_3
+      name: GoblinAttackDown_3
       rect:
         serializedVersion: 2
         x: 96
         y: 0
         width: 32
-        height: 32
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90a43ce2793138e4a97114470daf5371
-      internalID: 1669505584
+      spriteID: 27c2bfd2cee103945976acb749456d41
+      internalID: -1300066005
       vertices: []
       indices: 
       edges: []
@@ -217,10 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GoblinWalkUp_0: -1191879577
-      GoblinWalkUp_1: -1198719470
-      GoblinWalkUp_2: -1757397695
-      GoblinWalkUp_3: 1669505584
+      GoblinAttackDown_0: -235531692
+      GoblinAttackDown_1: 10230019
+      GoblinAttackDown_2: -2963995
+      GoblinAttackDown_3: -1300066005
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
