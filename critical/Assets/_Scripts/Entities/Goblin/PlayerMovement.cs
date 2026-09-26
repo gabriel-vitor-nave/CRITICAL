@@ -12,43 +12,54 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private Sprite spriteLado;
     [SerializeField] private Sprite spriteCostas;
 
+    [Header("Aim")]
+    [SerializeField] private Transform aim;
+
     private Rigidbody2D rb2D;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+    private PlayerAttack playerAttack;
 
     public Vector2 InputDirecao { get; private set; }
 
-    // Guarda a última direção em que o personagem estava olhando.
+    public Vector2 LastDirection => ultimaDirecao;
     private Vector2 ultimaDirecao = Vector2.down;
 
     private void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
-
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         animator = GetComponentInChildren<Animator>();
+        playerAttack = GetComponent<PlayerAttack>();
     }
 
     public void OnMove(InputAction.CallbackContext context)
     {
         InputDirecao = context.ReadValue<Vector2>().normalized;
 
-        // Só atualiza a direção quando existe movimento.
         if (InputDirecao != Vector2.zero)
         {
             ultimaDirecao = InputDirecao;
+
+            if (aim != null)
+            {
+                float angle = Mathf.Atan2(ultimaDirecao.x, -ultimaDirecao.y) * Mathf.Rad2Deg;
+                aim.localRotation = Quaternion.Euler(0f, 0f, angle);
+            }
         }
     }
 
     private void Update()
     {
         AtualizarVisual();
+        playerAttack?.SetAim(ultimaDirecao);
     }
 
     private void FixedUpdate()
     {
-        rb2D.velocity =
-            InputDirecao * (speed * speedMultiplier);
+        rb2D.velocity = playerAttack != null && playerAttack.IsAttacking
+            ? Vector2.zero
+            : InputDirecao * (speed * speedMultiplier);
     }
 
     private void AtualizarVisual()
@@ -56,17 +67,19 @@ public class PlayerMovement : MonoBehaviour
         if (animator == null || spriteRenderer == null)
             return;
 
+        if (playerAttack != null && playerAttack.IsAttacking)
+        {
+            animator.enabled = true;
+            animator.SetBool("IsMoving", false);
+            return;
+        }
+
         bool estaAndando = InputDirecao != Vector2.zero;
 
-        // ==========================================
-        // ANDANDO
-        // ==========================================
         if (estaAndando)
         {
             animator.enabled = true;
-
             animator.SetBool("IsMoving", true);
-
             animator.SetFloat("Horizontal", InputDirecao.x);
             animator.SetFloat("Vertical", InputDirecao.y);
 
@@ -78,55 +91,27 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        // ==========================================
-        // PARADO
-        // ==========================================
-
         animator.SetBool("IsMoving", false);
 
-        // --------------------------
-        // PARADO PARA CIMA
-        // --------------------------
-
-        if (ultimaDirecao.y > 0f &&
-            Mathf.Abs(ultimaDirecao.y) >= Mathf.Abs(ultimaDirecao.x))
-        {
-            animator.enabled = false;
-
-            spriteRenderer.sprite = spriteCostas;
-            spriteRenderer.flipX = false;
-
-            return;
-        }
-
-        // --------------------------
-        // PARADO PARA OS LADOS
-        // --------------------------
         if (Mathf.Abs(ultimaDirecao.x) > Mathf.Abs(ultimaDirecao.y))
         {
             animator.enabled = false;
-
             spriteRenderer.sprite = spriteLado;
-
-            if (ultimaDirecao.x < 0f)
-                spriteRenderer.flipX = true;
-            else
-                spriteRenderer.flipX = false;
-
+            spriteRenderer.flipX = ultimaDirecao.x < 0f;
             return;
         }
 
-        // --------------------------
-        // PARADO PARA BAIXO
-        // --------------------------
+        if (ultimaDirecao.y > 0f)
+        {
+            animator.enabled = false;
+            spriteRenderer.sprite = spriteCostas;
+            spriteRenderer.flipX = false;
+            return;
+        }
 
         animator.enabled = true;
-
-        animator.SetBool("IsMoving", false);
-
         animator.SetFloat("Horizontal", 0f);
         animator.SetFloat("Vertical", -1f);
-
         spriteRenderer.flipX = false;
     }
 }
