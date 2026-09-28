@@ -1031,7 +1031,6 @@ GameObject:
   - component: {fileID: 2009098728}
   - component: {fileID: 2009098727}
   - component: {fileID: 2009098726}
-  - component: {fileID: 2009098725}
   m_Layer: 5
   m_Name: Botao start
   m_TagString: Untagged
@@ -1058,22 +1057,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0.000030041, y: 153}
   m_SizeDelta: {x: 837.332, y: 157}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2009098725
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2009098723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 395dd24ed41454546ba7adcbd10a123c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tamanhoNormal: 1
-  tamanhoHover: 1.1
-  tamanhoClique: 0.95
-  velocidade: 10
 --- !u!114 &2009098726
 MonoBehaviour:
   m_ObjectHideFlags: 0
