@@ -11,18 +11,18 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
-        float verticalInput = Input.GetAxisRaw("Vertical");
+        Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
 
-        if(horizontalInput > 0 && transform.localScale.x < 0 || horizontalInput < 0 && transform.localScale.x > 0)
+        if ((input.x > 0 && transform.localScale.x < 0) ||
+            (input.x < 0 && transform.localScale.x > 0))
         {
             Flip();
         }
 
-        anim.SetFloat("horizontal", Mathf.Abs(horizontalInput));
-        anim.SetFloat("vertical", verticalInput);
+        anim.SetFloat("horizontal", Mathf.Abs(input.x));
+        anim.SetFloat("vertical", input.y);
 
-        rb.velocity = new Vector2(horizontalInput * velocidade, verticalInput * velocidade);
+        rb.velocity = input * velocidade;
     }
 
     void Flip()
