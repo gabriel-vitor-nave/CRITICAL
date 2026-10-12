@@ -172,7 +172,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GoblinIdle
+  m_Name: Idle
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -226,7 +226,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GoblinWalkingUp
+  m_Name: MoveUp
   m_Speed: 1.5
   m_CycleOffset: 0
   m_Transitions:
@@ -278,7 +278,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GoblinWalking
+  m_Name: MoveSide
   m_Speed: 1.5
   m_CycleOffset: 0
   m_Transitions:
@@ -305,7 +305,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GoblinWalkingDown
+  m_Name: MoveDown
   m_Speed: 1.5
   m_CycleOffset: 0
   m_Transitions:

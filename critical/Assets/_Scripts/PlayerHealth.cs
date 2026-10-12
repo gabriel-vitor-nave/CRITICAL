@@ -21,7 +21,6 @@ public class PlayerHealth : MonoBehaviour
         if(HP <= 0)
         {
             gameObject.SetActive(false);
-            Debug.Log("Player morreu");
         }
     }
 }
