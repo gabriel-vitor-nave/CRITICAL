@@ -3,17 +3,32 @@ using UnityEngine;
 public class Enemy_Combat : MonoBehaviour
 {
     public int damage = 1;
-
-    private void OnCollisionEnter2D(Collision2D hit) 
-    {
-        if (hit.gameObject.CompareTag("Player"))
-        {
-            hit.gameObject.GetComponent<PlayerHealth>().ChangeHP(-damage);
-        }
-    }
+    public Transform attackPoint;
+    public float weaponRange = 0.5f;
+    public float knockbackForce = 10f;
+    public float stunTime = 0.5f;
+    public LayerMask playerLayer;
 
     public void Attack()
     {
-        Debug.Log("Enemy attacked player");
+        Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, weaponRange, playerLayer);
+        foreach (Collider2D hit in hits)
+        {
+            hit.GetComponentInParent<PlayerHealth>().ChangeHP(-damage);
+            hit.GetComponentInParent<PlayerMovement>().Knockback(transform, knockbackForce, stunTime);
+        }
+
+
     }
+    private void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null)
+        {
+            return;
+        }
+
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPoint.position, weaponRange);
+    }
+
 }
