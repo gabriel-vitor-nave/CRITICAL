@@ -14,12 +14,9 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (Stunned != false) return;
-
         Vector2 input = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")).normalized;
 
-        if ((input.x > 0 && transform.localScale.x < 0) ||
-            (input.x < 0 && transform.localScale.x > 0))
+        if ((input.x > 0 && transform.localScale.x < 0) || (input.x < 0 && transform.localScale.x > 0))
         {
             Flip();
         }
@@ -27,8 +24,16 @@ public class PlayerMovement : MonoBehaviour
         anim.SetFloat("horizontal", Mathf.Abs(input.x));
         anim.SetFloat("vertical", input.y);
 
-        rb.velocity = input * velocidade;
+        // velocidade pela metade se tiver stunado
+        float velocidadeAtual = velocidade;
+        if (Stunned)
+        {
+            velocidadeAtual /= 2f;
+        }
+
+        rb.velocity = input * velocidadeAtual; 
     }
+
 
     void Flip()
     {
@@ -36,18 +41,19 @@ public class PlayerMovement : MonoBehaviour
         transform.localScale = new Vector3 (transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
     }
 
-    public void Knockback(Transform enemy, float force, float stunTime)
+    public void Invicibility(float stunTime) 
     {
         Stunned = true;
-        Vector2 direction = transform.position - enemy.position;
-        rb.velocity = direction.normalized * force;
-        StartCoroutine(KnockbackCounter(stunTime));
+        
+        StopAllCoroutines();
+        StartCoroutine(InvincibilityCounter(stunTime));
+
     }
 
-    IEnumerator KnockbackCounter(float stunTime)
+    IEnumerator InvincibilityCounter(float stunTime)
     {
         yield return new WaitForSeconds(stunTime);
-        rb.velocity = Vector2.zero;
         Stunned = false;
     }
+
 }
