@@ -6,6 +6,7 @@ Preparação em 26/10/2026. Editor encontrado: **Unity 2022.3.62f3**, projeto `c
 
 - Branch `demo` criada e publicada em `origin`.
 - MCP `unityMCP` cadastrado no Codex com URL `http://localhost:8080/mcp`.
+- Pré-requisitos confirmados neste computador: `uv 0.13.5` e Python `3.12.15`. A descoberta e a execução do Python pelo uv foram testadas. **Não é necessário repetir a instalação; continue no passo 3.**
 - Pacote MCP ainda não instalado no Unity nesta etapa. Servidor e conexão com o Editor ainda não verificados.
 - Scripts, cenas e assets de gameplay não foram alterados nesta preparação.
 - Alterações locais anteriores em `README.md` e `.obsidian/workspace.json` foram preservadas e não fazem parte do commit de preparação.
@@ -57,6 +58,8 @@ O primeiro teste de gameplay será menu > sala > movimento > ataque > dano > mor
 
 - **Git não encontrado ao adicionar o pacote:** reinicie o Unity depois de confirmar que `git --version` funciona em um terminal novo.
 - **Dependência Python/uv não encontrada:** confira o assistente e `uv --version`; se o PATH mudou, reabra o Editor após salvar.
+- **PowerShell não reconhece `uv` logo após instalar:** abra uma janela nova para carregar o PATH atualizado. A URL Git do pacote é para o campo do Package Manager do Unity, não para o PowerShell.
+- **Erro de atalho de versão do Python no Windows:** nesta preparação o Python foi instalado, mas o uv deixou uma junction de versão que não resolvia. Foi removida apenas essa junction, preservando o interpretador. `uv python find 3.12` e execução via `uv run --no-project --no-config --no-python-downloads --python 3.12 python --version` passaram. [Relato no projeto uv](https://github.com/astral-sh/uv/issues/19622).
 - **Erros vermelhos de compilação:** envie o texto do primeiro erro do Console. A conexão depende de o pacote conseguir compilar.
 - **Servidor em outra porta:** use a mesma porta no painel do Unity e na configuração `unityMCP` do Codex. A preparação atual usa 8080.
 - **URL cadastrada, mas sem Editor listado:** mantenha o Unity e o servidor abertos; confira se a sessão/ponte foi iniciada no painel MCP.
