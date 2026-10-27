@@ -72,15 +72,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: e0d9faf05b025c349be38b0d8cd05db1, type: 2}
   - {fileID: 11400000, guid: fdb4c471b070b96478d5018db3fd9585, type: 2}
   - {fileID: 11400000, guid: 9e70fd4ee8fd5c841bf69797f92e2955, type: 2}
-  northWall: {fileID: 11400000, guid: 7317aa4c32294d74abcdccd54e23f1d8, type: 2}
-  southWall: {fileID: 11400000, guid: bd2b25c12aa750642ace7355dbe956a1, type: 2}
-  westWall: {fileID: 11400000, guid: 2d92a042c9bc84742b9a3dd1ea650ccf, type: 2}
-  eastWall: {fileID: 11400000, guid: d9948c4fb8c58df4fa7b594e345866a0, type: 2}
-  northWestCorner: {fileID: 11400000, guid: 7facef03ea0f5a047b630357558d7bfc, type: 2}
-  northEastCorner: {fileID: 11400000, guid: eac8004b781876c4484b3fa6a71e9b08, type: 2}
-  southWestCorner: {fileID: 11400000, guid: 0845561092b9454419a6f4468d57901a, type: 2}
-  southEastCorner: {fileID: 11400000, guid: a5ff04be8be2a34409530a4bf0d6fc65, type: 2}
+  northWall: {fileID: 11400000, guid: 697db3f5e9f714e41b5e1303f2d299af, type: 2}
+  northWestWallCorner: {fileID: 11400000, guid: c164b4214defed74b896ad0e54c94432, type: 2}
+  northFinish: {fileID: 11400000, guid: 7317aa4c32294d74abcdccd54e23f1d8, type: 2}
+  northWestFinishCorner: {fileID: 11400000, guid: 7facef03ea0f5a047b630357558d7bfc, type: 2}
+  northDoorLeft: {fileID: 11400000, guid: dd430dcaa1914794e8f82365db093019, type: 2}
+  northDoorRight: {fileID: 11400000, guid: 9efdc7f6502a9e243b3ab7a4d060cf56, type: 2}
   voidTile: {fileID: 11400000, guid: d8bd49521bf810742a0137ed7f760652, type: 2}
+  outsideVoidPadding: 8
 --- !u!1 &2074266559854605578
 GameObject:
   m_ObjectHideFlags: 0

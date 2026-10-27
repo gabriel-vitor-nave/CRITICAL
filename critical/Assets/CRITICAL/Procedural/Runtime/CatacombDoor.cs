@@ -31,9 +31,7 @@ namespace Critical.Procedural
             Direction = placement.Direction;
             IsEntry = entry;
             IsOpen = opening = traversed = false;
-            float angle = Direction == DoorDirection.North ? 90f : Direction == DoorDirection.West ? 180f
-                : Direction == DoorDirection.South ? 270f : 0f;
-            transform.localRotation = Quaternion.Euler(0f, 0f, angle);
+            transform.localRotation = RoomTilemapView.DoorRotation(placement);
             blocker.isTrigger = false;
             blocker.enabled = true;
             if (blocker is BoxCollider2D box)
