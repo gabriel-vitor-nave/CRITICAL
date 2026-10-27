@@ -1,0 +1,282 @@
+{
+  "communities": {
+    "0": [
+      "layermask",
+      "monobehaviour",
+      "scripts_enemy_combat",
+      "scripts_enemy_combat_enemy_combat",
+      "scripts_enemy_combat_enemy_combat_attack",
+      "scripts_enemy_combat_enemy_combat_ondrawgizmosselected",
+      "scripts_player_combat_player_combat",
+      "scripts_player_combat_player_combat_start",
+      "scripts_player_combat_player_combat_update",
+      "scripts_playerhealth",
+      "scripts_playerhealth_playerhealth",
+      "scripts_playerhealth_playerhealth_changehp",
+      "scripts_playerhealth_playerhealth_start",
+      "tmp_text",
+      "tmpro",
+      "transform"
+    ],
+    "1": [
+      "menu_scripts_buttonhoveranimation",
+      "menu_scripts_daggerhovercycle",
+      "menu_scripts_floatingui",
+      "menu_scripts_floatinguitransition",
+      "menu_scripts_menutransition",
+      "menu_scripts_togglecheck",
+      "menu_scripts_uipulsingdarkness",
+      "scripts_enemy_movement",
+      "scripts_player_combat",
+      "scripts_playermovement",
+      "system_collections",
+      "system_collections_generic",
+      "unityengine",
+      "unityengine_eventsystems",
+      "unityengine_ui"
+    ],
+    "2": [
+      "animator",
+      "rigidbody2d",
+      "scripts_enemy_movement_enemy_movement",
+      "scripts_enemy_movement_enemy_movement_awake",
+      "scripts_enemy_movement_enemy_movement_changestate",
+      "scripts_enemy_movement_enemy_movement_chase",
+      "scripts_enemy_movement_enemy_movement_checkforplayer",
+      "scripts_enemy_movement_enemy_movement_flip",
+      "scripts_enemy_movement_enemy_movement_ondrawgizmosselected",
+      "scripts_enemy_movement_enemy_movement_update",
+      "scripts_enemy_movement_enemystate",
+      "scripts_enemy_movement_enemystate_attacking",
+      "scripts_enemy_movement_enemystate_chasing",
+      "scripts_enemy_movement_enemystate_idle"
+    ],
+    "3": [
+      "gameobject",
+      "ipointerclickhandler",
+      "menu_scripts_daggerhovercycle_daggerhovercycle",
+      "menu_scripts_daggerhovercycle_daggerhovercycle_avancarestado",
+      "menu_scripts_daggerhovercycle_daggerhovercycle_start",
+      "menu_scripts_daggerhovercycle_daggerhovercycle_update",
+      "menu_scripts_daggerhovercycle_daggerhovercycle_verificarbotoes",
+      "menu_scripts_togglecheck_togglecheck",
+      "menu_scripts_togglecheck_togglecheck_alternarcheck",
+      "menu_scripts_togglecheck_togglecheck_onpointerclick",
+      "menu_scripts_togglecheck_togglecheck_start",
+      "vector2"
+    ],
+    "4": [
+      "ipointerdownhandler",
+      "ipointerenterhandler",
+      "ipointerexithandler",
+      "ipointeruphandler",
+      "menu_scripts_buttonhoveranimation_buttonhoveranimation",
+      "menu_scripts_buttonhoveranimation_buttonhoveranimation_onpointerdown",
+      "menu_scripts_buttonhoveranimation_buttonhoveranimation_onpointerenter",
+      "menu_scripts_buttonhoveranimation_buttonhoveranimation_onpointerexit",
+      "menu_scripts_buttonhoveranimation_buttonhoveranimation_onpointerup",
+      "menu_scripts_buttonhoveranimation_buttonhoveranimation_start",
+      "menu_scripts_buttonhoveranimation_buttonhoveranimation_update",
+      "pointereventdata"
+    ],
+    "5": [
+      "menu_scripts_floatinguitransition_floatinguitransition",
+      "menu_scripts_floatinguitransition_floatinguitransition_flutuaraleatorio",
+      "menu_scripts_floatinguitransition_floatinguitransition_flutuarvertical",
+      "menu_scripts_floatinguitransition_floatinguitransition_novodestino",
+      "menu_scripts_floatinguitransition_floatinguitransition_posicaobase",
+      "menu_scripts_floatinguitransition_floatinguitransition_start",
+      "menu_scripts_floatinguitransition_floatinguitransition_update",
+      "menu_scripts_floatinguitransition_modoflutuar",
+      "menu_scripts_floatinguitransition_modoflutuar_aleatorio",
+      "menu_scripts_floatinguitransition_modoflutuar_vertical",
+      "modoflutuar"
+    ],
+    "6": [
+      "ienumerator",
+      "menu_scripts_menutransition_menutransition",
+      "menu_scripts_menutransition_menutransition_abriropcoes",
+      "menu_scripts_menutransition_menutransition_fecharopcoes",
+      "menu_scripts_menutransition_menutransition_flutuartitulooptions",
+      "menu_scripts_menutransition_menutransition_start",
+      "menu_scripts_menutransition_menutransition_transicaoparaopcoes",
+      "menu_scripts_menutransition_menutransition_transicaoparaprincipal",
+      "menu_scripts_menutransition_menutransition_update",
+      "vector3"
+    ],
+    "7": [
+      "menu_scripts_floatingui_floatingui",
+      "menu_scripts_floatingui_floatingui_flutuaraleatorio",
+      "menu_scripts_floatingui_floatingui_flutuarvertical",
+      "menu_scripts_floatingui_floatingui_novodestino",
+      "menu_scripts_floatingui_floatingui_start",
+      "menu_scripts_floatingui_floatingui_update",
+      "menu_scripts_floatingui_modoflutuar",
+      "menu_scripts_floatingui_modoflutuar_aleatorio",
+      "menu_scripts_floatingui_modoflutuar_vertical",
+      "recttransform"
+    ],
+    "8": [
+      "color",
+      "image",
+      "menu_scripts_uipulsingdarkness_uipulsingdarkness",
+      "menu_scripts_uipulsingdarkness_uipulsingdarkness_start",
+      "menu_scripts_uipulsingdarkness_uipulsingdarkness_update"
+    ],
+    "9": [
+      "scripts_playermovement_playermovement",
+      "scripts_playermovement_playermovement_fixedupdate",
+      "scripts_playermovement_playermovement_flip",
+      "scripts_playermovement_playermovement_invicibility",
+      "scripts_playermovement_playermovement_invincibilitycounter"
+    ]
+  },
+  "cohesion": {
+    "0": 0.13333333333333333,
+    "1": 0.2857142857142857,
+    "2": 0.21978021978021978,
+    "3": 0.21212121212121213,
+    "4": 0.21212121212121213,
+    "5": 0.2545454545454545,
+    "6": 0.28888888888888886,
+    "7": 0.3111111111111111,
+    "8": 0.5,
+    "9": 0.6
+  },
+  "gods": [
+    {
+      "id": "scripts_enemy_movement_enemy_movement",
+      "label": "Enemy_Movement",
+      "degree": 14
+    },
+    {
+      "id": "menu_scripts_buttonhoveranimation_buttonhoveranimation",
+      "label": "ButtonHoverAnimation",
+      "degree": 13
+    },
+    {
+      "id": "menu_scripts_floatinguitransition_floatinguitransition",
+      "label": "FloatingUiTransition",
+      "degree": 12
+    },
+    {
+      "id": "menu_scripts_menutransition_menutransition",
+      "label": "MenuTransition",
+      "degree": 12
+    },
+    {
+      "id": "menu_scripts_floatingui_floatingui",
+      "label": "FloatingUI",
+      "degree": 11
+    },
+    {
+      "id": "scripts_playermovement_playermovement",
+      "label": "PlayerMovement",
+      "degree": 9
+    },
+    {
+      "id": "menu_scripts_daggerhovercycle_daggerhovercycle",
+      "label": "DaggerHoverCycle",
+      "degree": 8
+    },
+    {
+      "id": "menu_scripts_togglecheck_togglecheck",
+      "label": "ToggleCheck",
+      "degree": 7
+    },
+    {
+      "id": "scripts_enemy_combat_enemy_combat",
+      "label": "Enemy_Combat",
+      "degree": 6
+    },
+    {
+      "id": "scripts_playerhealth_playerhealth",
+      "label": "PlayerHealth",
+      "degree": 6
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Enemy_Movement",
+      "target": "LayerMask",
+      "source_files": [
+        "_Scripts/Enemy_Movement.cs",
+        ""
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "note": "Bridges community 2 → community 0"
+    },
+    {
+      "source": "DaggerHoverCycle",
+      "target": "MonoBehaviour",
+      "source_files": [
+        "Menu/Scripts/DaggerHoverCycle.cs",
+        ""
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "note": "Bridges community 3 → community 0"
+    },
+    {
+      "source": "ButtonHoverAnimation",
+      "target": "MonoBehaviour",
+      "source_files": [
+        "Menu/Scripts/ButtonHoverAnimation.cs",
+        ""
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "note": "Bridges community 4 → community 0"
+    },
+    {
+      "source": "ButtonHoverAnimation",
+      "target": "Vector3",
+      "source_files": [
+        "Menu/Scripts/ButtonHoverAnimation.cs",
+        ""
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "note": "Bridges community 4 → community 6"
+    },
+    {
+      "source": "FloatingUiTransition",
+      "target": "MonoBehaviour",
+      "source_files": [
+        "Menu/Scripts/FloatingUiTransition.cs",
+        ""
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "inherits",
+      "note": "Bridges community 5 → community 0"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `Enemy_Movement` connect `Community 2` to `Community 0`, `Community 1`?",
+      "why": "High betweenness centrality (0.211) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `Attacking`, `Chasing`, `Idle` to the rest of the system?",
+      "why": "8 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.13333333333333333 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `ButtonHoverAnimation` connect `Community 4` to `Community 0`, `Community 1`, `Community 6`?",
+      "why": "High betweenness centrality (0.197) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `FloatingUiTransition` connect `Community 5` to `Community 0`, `Community 1`, `Community 3`, `Community 7`?",
+      "why": "High betweenness centrality (0.172) - this node is a cross-community bridge."
+    }
+  ]
+}

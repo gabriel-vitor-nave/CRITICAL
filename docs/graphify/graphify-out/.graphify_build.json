@@ -1,0 +1,1 @@
+{"excludes": ["TextMesh Pro/**", "Third Party/**", "Plugins/**", "**/*.json"]}
