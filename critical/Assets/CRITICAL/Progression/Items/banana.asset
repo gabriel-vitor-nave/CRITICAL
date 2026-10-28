@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9039910dddb740399705e0e25b5eeb12, type: 3}
+  m_Name: banana
+  m_EditorClassIdentifier: 
+  Id: banana
+  DisplayName: Banana
+  Description: "Um lanche de emerg\xEAncia. Restaura 3 de vida."
+  Icon: {fileID: 21300000, guid: 14c539a9f63184a4dba01166852ccd07, type: 3}
+  Rarity: 0
+  Consumable: 1
+  Effect: 0
+  Magnitude: 3
